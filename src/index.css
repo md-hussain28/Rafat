@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: "Inter", system-ui, sans-serif;
   }
 
   body {
@@ -46,7 +46,8 @@ html {
 
 /* Pulse animation */
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -56,4 +57,20 @@ html {
 
 .animate-pulse {
   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+/* Styles for screens smaller than 768px wide (typical tablet/mobile breakpoint) */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+
+  .container {
+    width: 90%; /* Make the container take up 90% of the screen width */
+    margin: 0 auto; /* Center the container */
+  }
+
+  .image {
+    width: 100%; /* Make images responsive */
+    height: auto;
+  }
 }
