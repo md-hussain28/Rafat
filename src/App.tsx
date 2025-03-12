@@ -101,10 +101,13 @@ function LoadingScreen() {
   return (
     <div className="fixed inset-0 bg-white z-50 flex items-center justify-center">
       <div className="text-center">
-        <div className="w-16 h-16 border-4 border-gray-200 border-t-black rounded-full animate-spin mb-4"></div>
-        <h2 className="text-xl font-light tracking-wider animate-pulse">
-          LUXE
-        </h2>
+        <div className="w-16 h-16  border-gray-200  rounded-full animate-spin mb-4">
+          <img
+            src={Logo}
+            alt="Logo"
+            className="w-14 tracking-wider animate-pulse animate-fadeIn"
+          />
+        </div>
       </div>
     </div>
   );
