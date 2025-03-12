@@ -382,7 +382,7 @@ function App() {
 
       {/* Product Modal */}
       {selectedBag && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center py-12   p-4">
           <div className="bg-white max-w-4xl w-full rounded-lg overflow-hidden relative animate-fadeIn">
             <button
               onClick={() => setSelectedBag(null)}
@@ -426,13 +426,6 @@ function App() {
                         <li key={index}>• {feature}</li>
                       ))}
                     </ul>
-                  </div>
-
-                  <div>
-                    <h4 className="font-medium mb-2">Care Instructions</h4>
-                    <p className="text-sm text-gray-600">
-                      {selectedBag.details.care}
-                    </p>
                   </div>
 
                   <button
